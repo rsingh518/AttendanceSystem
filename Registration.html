@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    
+    <link rel="stylesheet" href="loginstyle.css">
+    <script src="loginjava.js"></script>
+</head>
+
+<body>
+    
+
+        <form class="box" action="connect.php" method="post" enctype="multipart/form-data">
+            <h1>Registration Form</h1>
+            <input type="text" placeholder="First Name" id="firstName" name="firstName" />
+            <input type="text" placeholder="Last Name" id="lastName" name="lastName" />
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                    <label for="male" class="radio-inline"><input type="radio" name="gender" value="m"
+                            id="male" />Male</label>
+                    <label for="female" class="radio-inline"><input type="radio" name="gender" value="f"
+                            id="female" />Female</label>
+                    <label for="others" class="radio-inline"><input type="radio" name="gender" value="o"
+                            id="others" />Others</label>
+                </div>
+            </div>
+            <input type="text" placeholder="Enter Email" id="email" name="email" />
+            <input type="number" placeholder="Roll Number" id="number" name="number" />
+            <input type="file" placeholder="Image" id="file" name="file" accept=".png, .jpg" required="required" />
+            <input type="password" placeholder="Enter Password" id="password" name="password" />
+            <input type="submit" name="" value="Registration">
+
+
+        </form>
+</body>
+
+</html>
